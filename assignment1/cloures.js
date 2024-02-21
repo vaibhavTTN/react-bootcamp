@@ -17,7 +17,7 @@ function counter() {
 }
 
 const counter1 = counter();
-const counter2 = counter();
+const counter2 = new counter();
 
 console.log(counter1.increment());
 console.log(counter1.increment());
@@ -26,3 +26,12 @@ console.log(counter1.getCount());
 
 console.log(counter1.decrement());
 console.log(counter1.getCount());
+
+console.log("---------------------------------------------------");
+console.log(counter2.increment());
+console.log(counter2.increment());
+
+console.log(counter2.getCount());
+
+console.log(counter2.decrement());
+console.log(counter2.getCount());

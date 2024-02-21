@@ -45,6 +45,9 @@ function getDateAndTime() {
   if (session === "PM") {
     great = "Good Afternoon";
   }
+  if (date.getHours() >= 18) {
+    great = "Good Evening";
+  }
 
   document.getElementById("great").innerText = great;
   document.getElementById("date").innerText = currentDate;
